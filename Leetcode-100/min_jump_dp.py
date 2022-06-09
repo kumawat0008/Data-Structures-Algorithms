@@ -17,11 +17,5 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        INT_MAX = 10000000
-        dp = [INT_MAX]*len(nums)
-        dp[0] = 0
-        for i in range(1, len(nums)):
-            for j in range(0, i):
-                if j+nums[j]>=i and nums[j]!=INT_MAX:
-                    dp[i] = min(dp[i], dp[j]+1)
-        return dp[-1]
+        dp = dict()
+        return self.jump_util(nums, 0, dp)

@@ -13,7 +13,7 @@ class Graph:
 
     def BFS(self, source):
 
-        visited = [False]* len(self.graph)
+        visited = [False]*len(self.graph)
 
         queue = list()
         queue.append(source)

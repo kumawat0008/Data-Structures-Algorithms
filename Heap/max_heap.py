@@ -27,7 +27,7 @@ class MaxHeap(object):
 
 if __name__ == '__main__':
 
-    arr = [1, 4, 3, 7, 8, 9, 10]
+    arr = [3, 2, 1, 5, 6, 4]
 
     heap = MaxHeap(arr)
 
